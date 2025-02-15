@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+  }
+  input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #result {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  #timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    50% { opacity: 0.5; }
+  }
+
+  .danger{
+    color: red;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  input{
+    padding:10px;
+    outline: none;
+  }
+button{
+    background:green;
+    outline: none;
+    border: 0;
+    box-shadow: 2px 0px 4px white;
+    min-width: 150px;
+    border-radius: 10px;
+    :nth-last-child(){
+        background: red;
+        color: white;
+    }
+}
+
+.displayArea{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

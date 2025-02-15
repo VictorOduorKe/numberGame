@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the 3-Digit Number</title>
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="warning"> 
+            <h1> Welcome to Number game</h1> 
+            <h2 class="danger">⚠ Be warned this game May shutdown <br>
+             your device if you miss the number ⚠</h2>
+        </div>
+        <div class="displayArea">
+            <h1>Guess the 3-Digit Number</h1>
+            <p id="timer">Time Left: 30s</p>
+            <input type="number" id="userGuess" placeholder="Enter a number (100-999)">
+            <p id="result"></p>
+            <div class="btn-area">
+                <button onclick="checkGuess()">Submit</button>
+                <button id="cancelButton" onclick="cancelShutdown()" style="display:none;">Cancel Shutdown</button>
+            </div>
+        </div>
+    </div>
+ 
+  <script src="./js/render.js"></script>
+</body>
+</html>
